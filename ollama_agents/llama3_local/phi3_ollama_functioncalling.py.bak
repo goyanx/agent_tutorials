@@ -2,10 +2,10 @@ from langchain_experimental.llms.ollama_functions import OllamaFunctions
 from langchain_core.messages import HumanMessage
 
 model = OllamaFunctions(
-    model="dolphin-phi:latest",
+    model="phi3", 
     keep_alive=-1,
     format="json"
-)
+    )
 
 model = model.bind_tools(
     tools=[

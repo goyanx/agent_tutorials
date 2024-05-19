@@ -21,8 +21,8 @@ QUESTION: {question}<|end|>
 )
 
 # Chain
-llm = OllamaFunctions(model="dolphin-phi:latest",
-                      format="json",
+llm = OllamaFunctions(model="phi3", 
+                      format="json", 
                       temperature=0)
 
 structured_llm = llm.with_structured_output(Person)
